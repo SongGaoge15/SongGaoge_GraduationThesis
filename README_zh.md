@@ -7,6 +7,26 @@
 
 如果要配置Python环境用于绘制论文插图或其它数据分析工作，比较推荐的方式是使用[Anaconda](https://www.anaconda.com/)并配置虚拟环境，这是由于Anaconda在建立虚拟环境时，可以比较好地处理各个包之间的依赖关系，从而使得代码及环境更易于管理，同时也能较好地照顾到兼容性。
 
+### Fig. 3 典型样本的粒度分布与粒度参数
+
+图3 (a)至图3 (e)展示了训练集中分属不同沉积环境的**训练样本的粒度曲线**，并基于这些粒度曲线计算了各个沉积环境的**平均曲线**。此外，图3 (f)分沉积环境显示了不同粒度参数的**带有误差棒的条形图**，以便对各类训练样本的粒度参数进行直观的理解。
+
+需要注意的是，这段代码中，我们假设所需的数据存储在了同一个Excel表格的不同Sheet中。如果你的数据是以`.csv`格式存储的，则需要在代码读取数据的部分进行如下修改（但仍然可以通过导入的`pandas`包实现）：
+``` Python
+# 导入的包不变
+# 假设原代码中的3个Sheet现在分别存储在training_data.csv、original_data.csv、grain_size_analysis.csv中
+
+training_data_path = 'your_path_to/training_data.csv'
+original_data_path = 'your_path_to/original_data.csv'
+grain_size_analysis_path = 'your_path_to/grain_size_analysis.csv'
+
+training_data = pd.read_csv('training_data_path')
+original_data = pd.read_csv('original_data_path')
+grain_size_analysis = pd.read_csv('grain_size_analysis_path')
+
+# 后续的代码不变
+```
+
 ### Fig. 6 不同沉积环境的粒度参数箱型图
 图6展示了不同沉积环境的粒度参数，并采用**箱型图**来体现各个粒度参数在不同沉积环境中所表现的分散特征。
 
