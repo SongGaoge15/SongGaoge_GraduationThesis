@@ -7,6 +7,11 @@ The majority of the illustrations in the paper were created using **Python 3.12*
 
 For configuring a Python environment for creating paper illustrations or other data analysis tasks, the recommended approach is to use [Anaconda](https://www.anaconda.com/) and set up a virtual environment. This recommendation stems from Anaconda's adept handling of dependencies among packages when establishing virtual environments, thereby facilitating more manageable code and environment maintenance, as well as better compatibility.
 
+### Fig. 3
+Figures 3 (a) to 3 (e) showcase **the grain size curves** of training samples from different sedimentary environments contained within the training set, and based on these curves, **the average curve** for each sedimentary environment has been calculated. Additionally, Figure 3 (f) displays **bar charts with error bars** for different grain size parameters by sedimentary environment, facilitating an intuitive understanding of the granularity parameters of various classes of training samples.
+
+It is important to note that in this code segment, it is assumed that the required data is stored in different sheets of the same Excel workbook. If your data is stored in .csv format, modifications will be needed in the part of the code that reads the data. However, this can still be accomplished by importing the pandas package, as demonstrated below:
+
 ### Fig. 6 不同沉积环境的粒度参数箱型图
 Figure 6 displays the granularity parameters of different depositional environments and employs **box plots** to illustrate the dispersion characteristics of each grain size parameter across various sedimentary environments.
 
