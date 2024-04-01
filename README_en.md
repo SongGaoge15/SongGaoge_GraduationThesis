@@ -17,9 +17,9 @@ Before proceeding with the graphical representation, please organize your data a
 | Spec 2 | 2.4790 | 1.9923 | 2.6787 | 9.7047 | 5 |
 | …… | …… | …… | …… | …… | …… |
 
-When running the code, granularity parameters (in this example, Phi, sigma, Skewness, Kurtosis) for different depositional environments will be drawn separately based on the values of the classification variable Class representing these environments.
+When running the code, grain size parameters (in this example, `Phi`, `sigma`, `Skewness`, `Kurtosis`) for different sedimentary environments will be drawn separately based on the values of the classification variable `Class` representing these environments.
 
-To run this code, the packages matplotlib, seaborn, and pandas need to be installed. You can execute the following commands in Anaconda Prompt to set up your environment:
+To run this code, the packages `matplotlib`, `seaborn`, and `pandas` need to be installed. You can execute the following commands in Anaconda Prompt to set up your environment:
 
  - Activate the relevant environment: `conda activate your_env_name`
  - Install the necessary packages: `conda install matplotlib seaborn pandas`
