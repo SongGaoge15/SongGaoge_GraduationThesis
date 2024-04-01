@@ -12,6 +12,21 @@ Figures 3 (a) to 3 (e) showcase **the grain size curves** of training samples fr
 
 It is important to note that in this code segment, it is assumed that the required data is stored in different sheets of the same Excel workbook. If your data is stored in .csv format, modifications will be needed in the part of the code that reads the data. However, this can still be accomplished by importing the pandas package, as demonstrated below:
 
+```Python
+# The imported packages remain unchanged
+# Assuming the 3 Sheets from the original code are now stored in training_data.csv, original_data.csv, grain_size_analysis.csv respectively
+
+training_data_path = 'your_path_to/training_data.csv'
+original_data_path = 'your_path_to/original_data.csv'
+grain_size_analysis_path = 'your_path_to/grain_size_analysis.csv'
+
+training_data = pd.read_csv(training_data_path)
+original_data = pd.read_csv(original_data_path)
+grain_size_analysis = pd.read_csv(grain_size_analysis_path)
+
+# The subsequent code remains unchanged
+```
+
 ### Fig. 6 不同沉积环境的粒度参数箱型图
 Figure 6 displays the granularity parameters of different depositional environments and employs **box plots** to illustrate the dispersion characteristics of each grain size parameter across various sedimentary environments.
 
