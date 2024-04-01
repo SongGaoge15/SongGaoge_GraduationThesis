@@ -20,9 +20,9 @@ training_data_path = 'your_path_to/training_data.csv'
 original_data_path = 'your_path_to/original_data.csv'
 grain_size_analysis_path = 'your_path_to/grain_size_analysis.csv'
 
-training_data = pd.read_csv('training_data_path')
-original_data = pd.read_csv('original_data_path')
-grain_size_analysis = pd.read_csv('grain_size_analysis_path')
+training_data = pd.read_csv(training_data_path)
+original_data = pd.read_csv(original_data_path)
+grain_size_analysis = pd.read_csv(grain_size_analysis_path)
 
 # 后续的代码不变
 ```
