@@ -10,7 +10,7 @@ For configuring a Python environment for creating paper illustrations or other d
 ### Fig. 3
 Figures 3 (a) to 3 (e) showcase **the grain size curves** of training samples from different sedimentary environments contained within the training set, and based on these curves, **the average curve** for each sedimentary environment has been calculated. Additionally, Figure 3 (f) displays **bar charts with error bars** for different grain size parameters by sedimentary environment, facilitating an intuitive understanding of the granularity parameters of various classes of training samples.
 
-It is important to note that in this code segment, it is assumed that the required data is stored in different sheets of the same Excel workbook. If your data is stored in .csv format, modifications will be needed in the part of the code that reads the data. However, this can still be accomplished by importing the pandas package, as demonstrated below:
+It is important to note that in this code segment, it is assumed that the required data is stored in different sheets of the same Excel workbook. If your data is stored in `.csv` format, modifications will be needed in the part of the code that reads the data. However, this can still be accomplished by importing the `pandas` package, as demonstrated below:
 
 ```Python
 # The imported packages remain unchanged
